@@ -5,6 +5,10 @@
   <title>IT Operations & Automation Engineer Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="bingbot" content="noindex, nofollow">
+  <meta name="robots" content="noindex, nofollow">
+
   <style>
     :root {
       --bg: #ffffff;
@@ -142,8 +146,8 @@
     /* Stats */
     .stats {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(260px, 1fr)); /* 横幅を広げる */
+      gap: 1.5rem;
       margin-top: 2rem;
     }
     .stat-card {
@@ -273,19 +277,19 @@
 
           <div class="stats">
             <div class="stat-card">
-              <div class="stat-label">監視アラーム削減</div>
-              <div class="stat-value">約97％</div>
-              <div class="stat-desc">不要アラームの最適化による削減</div>
+              <div class="stat-label">運用高度化</div>
+              <div class="stat-value">標準化・改善・再設計</div>
+              <div class="stat-desc">大規模インフラの安定運用を支えるため、約10名規模で運用再設計と標準化を主導</div>
             </div>
             <div class="stat-card">
-              <div class="stat-label">対応工数削減</div>
-              <div class="stat-value">約96％</div>
-              <div class="stat-desc">監視対応工数の大幅削減</div>
+              <div class="stat-label">累計削減工数</div>
+              <div class="stat-value">2,000時間以上</div>
+              <div class="stat-desc">丁寧な改善と・自動化により大幅削減を実現</div>
             </div>
             <div class="stat-card">
-              <div class="stat-label">障害対応工数削減</div>
-              <div class="stat-value">約23％</div>
-              <div class="stat-desc">復旧作業自動化による削減</div>
+              <div class="stat-label">マネジメント</div>
+              <div class="stat-value">5〜15名規模</div>
+              <div class="stat-desc">関係部署との調整を行い、運用課題を着実に解消する体制を整備</div>
             </div>
           </div>
         </div>
@@ -305,6 +309,11 @@
           <h3 style="margin-top:1.5rem;">リーダー経験</h3>
           <p class="text-muted">
             5名体制のヘルプデスクチームリーダーとして、問い合わせ対応、FAQ・手順書整備、メンバー育成、対応品質改善を推進しました。
+          </p>
+          <h3 style="margin-top:1.5rem;">PMO経験</h3>
+          <p class="text-muted">
+            プロジェクトマネジメント支援として、進捗管理・課題管理・品質管理・会議運営を担当。
+            成果物レビュー運用の再設計や品質基準の標準化を主導し、不備件数30〜40％削減、レビュー工数20％削減を実現しました。
           </p>
         </div>
         <div>
@@ -358,6 +367,17 @@
         <div class="pill">Zabbix</div>
         <div class="pill">Nagios</div>
       </div>
+      
+      <div style="margin-top:1.5rem;">
+  <h3>PMO・品質管理</h3>
+  <p class="text-muted">進捗管理 / 課題管理 / 品質管理 / レビュー標準化 / バージョン管理 / 会議運営</p>
+  <div class="pill">PMO</div>
+  <div class="pill">進捗管理</div>
+  <div class="pill">課題管理</div>
+  <div class="pill">品質管理</div>
+  <div class="pill">レビュー標準化</div>
+  <div class="pill">バージョン管理</div>
+</div>
 
       <div style="margin-top:1.5rem;">
         <h3>ソフトスキル</h3>
@@ -391,6 +411,12 @@
           <p><strong>改善後:</strong> 発報判断時間を大幅短縮し、判断品質を均一化。</p>
           <p class="text-muted">使用技術: Power Automate / Copilot Studio / Teams</p>
         </div>
+        <div class="card">
+  <h3>PMOによるレビュー品質改善</h3>
+  <p><strong>改善前:</strong> 成果物レビューが属人化し、不備が多発していた。</p>
+  <p><strong>改善後:</strong> 不備件数30〜40％削減、レビュー工数20％削減。品質基準を標準化し、チーム全体の品質を向上。</p>
+  <p class="text-muted">役割: PMOサブリーダー（15名規模） / 使用技術: チェックリスト標準化 / バージョン管理 / 進捗管理</p>
+</div>
       </div>
     </section>
 
@@ -558,16 +584,16 @@
           <div class="tech-card">
             <div class="tech-card-line"></div>
             <div class="tech-card-content">
-              <h3>AWSサーバー障害のAI自動分析（CPU使用率上昇）</h3>
+              <h3>AWSサーバー障害のAI自動分析</h3>
 
               <h4 class="section-title">目的</h4>
               <p class="text-muted">
-                CPU使用率上昇時の切り分けが担当者依存で、初動対応が遅れることがあったため。
+                障害の切り分けが担当者依存で、初動対応が遅れることがあったため。
               </p>
 
               <h4 class="section-title">実行プロセス</h4>
               <div class="flow-container">
-                <div class="flow-item">CPU上昇検知</div>
+                <div class="flow-item">障害検知</div>
                 <div class="flow-arrow">→</div>
                 <div class="flow-item">ログ・プロセス確認</div>
                 <div class="flow-arrow">→</div>
@@ -591,6 +617,45 @@
               </div>
             </div>
           </div>
+          
+          <!-- PMO経験 -->
+          <div class="tech-card">
+            <div class="tech-card-line"></div>
+            <div class="tech-card-content">
+              <h3>PMOによるレビュー運用標準化</h3>
+
+              <h4 class="section-title">目的</h4>
+              <p class="text-muted">
+                成果物レビューが属人化し、不備が多発していたため、品質基準を統一し、レビュー効率を向上させる必要があった。
+              </p>
+
+              <h4 class="section-title">実行プロセス</h4>
+              <div class="flow-container">
+                <div class="flow-item">レビュー基準策定</div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-item">チェックリスト標準化</div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-item">バージョン管理ルール整備</div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-item">指摘傾向の可視化</div>
+              </div>
+
+              <h4 class="section-title">成果</h4>
+              <ul class="tech-list">
+                <li>不備件数 30〜40% 削減</li>
+                <li>レビュー工数 20% 削減</li>
+                <li>品質基準の統一による属人化解消</li>
+              </ul>
+
+              <div class="pill-box">
+                <span class="pill">PMO</span>
+                <span class="pill">品質管理</span>
+                <span class="pill">バージョン管理</span>
+                <span class="pill">標準化</span>
+              </div>
+            </div>
+          </div>
+
 
         </div>
       </div>
@@ -709,10 +774,13 @@
 
         <div class="timeline-item">
           <div class="timeline-year">2010年代後半〜2020年代前半</div>
-          <div class="timeline-title">中堅ITサービス企業（数百名規模） — ヘルプデスク・品質改善・教育</div>
+          <div class="timeline-title">中堅ITサービス企業（数百名規模） — ヘルプデスク・品質改善・教育・PMO（プロジェクトマネジメント支援</div>
           <div class="timeline-desc">
             5名チームのヘルプデスクリーダーとしてFAQ整備、ナレッジ管理、問い合わせ削減を推進。
             メンバー育成やソフトウェア評価・検証を担当し、運用品質向上に貢献。
+            プロジェクトマネジメント支援として、進捗管理・課題管理・品質管理・会議運営を担当。
+            成果物レビュー基準の標準化、チェックリスト整備、バージョン管理ルール策定を推進し、
+             レビュー不備件数30〜40％削減、レビュー工数20％削減に貢献。
           </div>
         </div>
 
@@ -730,14 +798,19 @@
 
     <!-- Contact -->
     <section id="contact">
-      <h2>お問い合わせ</h2>
+      <h2>問合せ</h2>
       <p class="text-muted">
-        プロジェクトや実績はこちらからご覧いただけます。
+            埼玉県出身。美術館めぐりや登山、温泉が好きで、静かな場所でゆっくり過ごす時間を大切にしています。
+            料理が特技で、段取りよく進めることや、同じ味を再現するために工夫するのが好きです。
       </p>
+      
       <p style="margin-top:0.8rem;">
-        GitHub: <a href="https://github.com/your-account" target="_blank" style="color:var(--blue-main);">github.com/your-account</a><br />
+            趣味：美術館 / 登山 / 温泉<br />
+            特技：料理<br />
+      </p>      
+      <p style="margin-top:0.8rem;">
+            GitHub: <a href="https://r1e257-sh1ft.github.io/portfolio/login.html" target="_blank" style="color:var(--blue-main);">github.com/portfolio</a><br />
       </p>
-    </section>
 
   </main>
 </body>
