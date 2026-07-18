@@ -123,7 +123,7 @@
       if (hashHex === PASSWORD_HASH) {
         // ログイン状態を保存（直リンク防止用）
         localStorage.setItem("loggedIn", "true");
-
+        
         window.location.href = "/portfolio/private/index.html";
       } else {
         document.getElementById("msg").textContent = "パスワードが違います";
